@@ -29,10 +29,10 @@ const chartConfig = {
 
 export function ChartDemo() {
   return (
-    <div>
-      <div className="w-[350px] m-auto">
+    <div className="flex flex-wrap">
+      <div className="w-[450px] sm:w-auto md:w-auto m-auto">
         <h1>Bar chart</h1>
-        <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+        <ChartContainer config={chartConfig} className="min-h-[200px] w-full bg-white p-4 rounded-xl">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
@@ -49,7 +49,9 @@ export function ChartDemo() {
           </BarChart>
         </ChartContainer>
       </div>
-      <Donut/>
+      <div className=' m-auto sm:w-auto md:w-auto'>
+      <Donut />
+      </div>
     </div>
   );
 }
