@@ -14,11 +14,7 @@ const Homepage = () => {
         <NavLink to={'/chart'}><Button variant='destructive'>See Charts</Button></NavLink>
         <NavLink to={'/dialog'}><Button variant='destructive'>See dialog popup form</Button></NavLink>
         
-         <Button variant="secondary">Secondary</Button>
-         <Button variant="secondary">Secondary</Button>
-         <Button variant="secondary">Secondary</Button>
-         <Button variant="secondary">Secondary</Button>
-         <Button variant="secondary">Secondary</Button>
+       
     </div>
   )
 }
